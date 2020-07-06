@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+	<title>Enter Flight Details</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+</head>
+<body class="text-center">
+    <div class="MAIN">
+    <form action = "http://localhost:5000/prediction"  class="my-form" method = "post">
+      <div id="container">
+    <div class="logo">
+      <br><br> <span class="fas fa-fighter-jet"></span></div>
+      <h2>Enter Flight Detatils</h2><br>
+    <label for="text" class="sr-only">Flight Number</label>
+      <input type="text" name="name" class="form-control" placeholder="Flight Number" required autofocus>
+      <label for="text" class="sr-only">Month</label><br>
+      <input type="text" name="month" class="form-control" placeholder="Month" required>
+      <label for="text" class="sr-only">Day of month</label><br>
+      <input type="text" name="day" class="form-control" placeholder="Day of month" required>
+      <label for="text" class="sr-only">Day of week</label><br>
+      <input type="text" name="week" class="form-control" placeholder="Day of week" required><br>
+      <select class="form-control" name="origin">
+        <option value = "msp">--Select Origin--</option>
+        <option value = "msp">MSP</option>
+        <option value = "dtw">DTW</option>
+        <option value = "jfk">JFK</option>
+        <option value = "sea">SEA</option>
+        <option value = "alt">ATL</option>
+      </select><br>
+      <select class="form-control" name="destination">
+        <option value = "msp">--Select Destination--</option>
+        <option value = "msp">MSP</option>
+        <option value = "dtw">DTW</option>
+        <option value = "jfk">JFK</option>
+        <option value = "sea">SEA</option>
+        <option value = "alt">ATL</option>
+      </select>
+      <label for="text" class="sr-only">Scheduled Departure Time</label><br>
+      <input type="text" name="dept" class="form-control" placeholder="Scheduled Departure Time" required>
+      <label for="text" class="sr-only">Scheduled Arrival Time</label><br>
+      <input type="text" name="arrtime" class="form-control" placeholder="Scheduled Arrival Time" required>
+      <label for="text" class="sr-only">Actual Arrival Time</label><br>
+      <input type="text" name="actdept" class="form-control" placeholder="Actual Arrival Time" required><br>
+      <button class="btn btn-primary btn-block" type="submit">Submit</button>
+    </form>
+    <b>{{showcase}}</b>
+    </div></div>
+    </body>
+    </html>

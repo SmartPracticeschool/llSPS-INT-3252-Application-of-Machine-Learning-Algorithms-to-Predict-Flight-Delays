@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom:40px;
+  background-image: url('image.jpg');
+   background-size:cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.my-form {
+  width: 100%;
+  max-width: 500px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+h2{
+	color: #fff;
+}
+
+ .logo{
+	
+	font-size: 40px;
+}
+.btn{
+  background-color: orange; 
+  color: black; 
+  border: 2px solid #00CED1 ;
+}
+
+.btn:hover {
+  background-color: #00CED1;
+  color:#342D7E ;
+}
